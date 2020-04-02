@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chem Questions</title>
+        <meta name="description" content="A tool to generate practice questions for Accelerated Chemistry at Stevenson High School.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+        
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container" id="page">
+            <div class="container" id="generator">
+                <div class="container" id="input">
+                    <div class="container" id="question-type-wrap">
+                        <label for="question-type">
+                            Question Type
+                            <select id="question-type" name="question-type">
+                                <optgroup label="Acids and Bases">
+                                    <option value="neutralization:c:acid">Neutralization: Concentration of an Acid</option>
+                                    <option value="neutralization:c:base">Neutralization: Concentration of a Base</option>
+                                    <option value="neutralization:v:acid">Neutralization: Volume of an Acid</option>
+                                    <option value="neutralization:v:base">Neutralization: Volume of a Base</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="container" id="generate-button-wrap">
+                        <button type="button" class="btn btn-outline-info" id="generate-button">Generate</button>
+                    </div>
+                </div>
+                <div class="container" id="question"></div>
+                <div class="container" id="answer">
+                    <form>
+                        <div class="form-group" id="answer-in-wrapper">
+                            <input type="text" class="form-control" id="answer-in" placeholder="Answer">
+                            <small id="answer-help" class="form-text text-muted">Round to the nearest thousandth. No units necessary.</small>
+                        </div>
+                        <button type="button" class="btn btn-outline-primary" id="submit-button">Submit</button>
+                    </form>
+                    <div id="answer-out"></div>
+                </div>
+            </div>
+            <div class="container" id="about">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor</p>
+            </div>
+            
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+        <script src="question.js" async defer></script>
+        <script src="script.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    </body>
+</html>
