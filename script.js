@@ -1,7 +1,5 @@
 $(document).ready(() => {
 
-$('#question-type').select2();
-
 let question;
 $('#generate-button').click(() => {
     question = new QUESTION_TYPES[$('#question-type').val()];

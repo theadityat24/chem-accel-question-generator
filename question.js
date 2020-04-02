@@ -1,10 +1,3 @@
-class Question {
-    constructor(name) {
-        this.name = name;
-        this.state = {};
-    }
-}
-
 class NeutralizationConcentrationAcid {
     constructor() {
         this.name = "neutralization:c:acid";
